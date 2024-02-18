@@ -1,0 +1,66 @@
+body {
+    background-color: cadetblue;;
+}
+
+div{
+    position:absolute;
+    bottom: 900px;
+}
+
+img{
+    height: 1080px;
+    width: 1920pxs;
+}
+.container {
+    position: relative;
+  }
+
+.container:hover {
+    width: 100%;
+    height: 100px;
+    animation-name: cssanimation;
+    /*should be same as the name after keyframes*/
+    animation-duration: 2s;
+    animation-iteration-count: 10;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#head:hover {
+    color: blue;
+    animation-name: text;
+    animation-duration: 2s;
+}
+
+@keyframes cssanimation {
+    from {
+        background-color: cadetblue;
+    }
+
+    to {
+        background-color: rgb(151, 151, 255);
+    }
+
+    from {
+        height: 40px;
+    }
+
+    to {
+        height: 100px;
+    }
+
+}
+
+@keyframes text {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
